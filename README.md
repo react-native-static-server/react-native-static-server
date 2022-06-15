@@ -1,7 +1,7 @@
 
 # @react-native-static-server/react-native-static-server
 
-A cross platform component for serving static assets with React Native.
+A cross platform component for serving static assets with React Native. This library provides essential function for "wrapped" web apps and deserves to be actively maintained. This official fork has been created for that purpose.
 
 ## Getting started
 
