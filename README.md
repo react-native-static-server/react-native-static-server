@@ -1,24 +1,24 @@
 
-# react-native-static-server
+# @react-native-static-server/react-native-static-server
 
 A cross platform component for serving static assets with React Native.
 
 ## Getting started
 
-`$ npm install react-native-static-server --save`
+`$ npm install @react-native-static-server/react-native-static-server --save`
 
 ### Installation
 
 From react-native 0.60 autolinking will take care of the link step but don't forget to run pod install
 
-`$ react-native link react-native-static-server`
+`$ react-native link @react-native-static-server/react-native-static-server`
 
 ## Usage
 
 Declare the `StaticServer` with a port or use the default `0` to pick a random available port.
 
 ```javascript
-import StaticServer from 'react-native-static-server';
+import StaticServer from '@react-native-static-server/react-native-static-server';
 
 let server = new StaticServer(8080);
 
@@ -42,7 +42,7 @@ For instance, using [react-native-fs](https://github.com/johanneslumpe/react-nat
 #### Default (document directory)
 
 ```javascript
-import StaticServer from 'react-native-static-server';
+import StaticServer from '@react-native-static-server/react-native-static-server';
 import RNFS from 'react-native-fs';
 
 // create a path you want to write to
@@ -66,7 +66,7 @@ In XCode, `Project Navigator` right click in the folder project → `Add files t
 When the app gets bundled, this folder will be next to the compiled app, so using `MainBundlePath` property from `react-native-fs` you can access to the directory.
 
 ```javascript
-import StaticServer from 'react-native-static-server';
+import StaticServer from '@react-native-static-server/react-native-static-server';
 import RNFS from 'react-native-fs';
 
 // path where files will be served from (index.html here)
@@ -78,7 +78,7 @@ let server = new StaticServer(8080, path);
 If the server should only be accessible from within the app, set `localOnly` to `true`
 
 ```javascript
-import StaticServer from 'react-native-static-server';
+import StaticServer from '@react-native-static-server/react-native-static-server';
 
 // Just set options with defaults
 let server = new StaticServer({localOnly : true });
